@@ -1,0 +1,121 @@
+* {
+	box-sizing: border-box;
+}
+
+#sailio {
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid black;
+
+}
+
+main {
+	padding: 20px;
+	border-bottom: 3px solid #000000;
+}
+
+main::after {
+	content: "";
+	display: block;
+	clear: both;
+	}
+
+header {
+	padding: 10px;
+	margin: 10px;
+	/*background-color: # ;*/
+	border: 3px solid black;
+}
+
+#otsikko {
+	text-align: center;
+}
+
+section.kategoriasailio {
+	width: 80%;
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	border: 3px solid black;
+	text-align: center;
+}
+
+#ohjesailio {
+	border: 3px solid black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+}
+
+#ohjesailio h3 {
+	margin-left: 10px;
+}
+
+#ohjesailio ul {
+	list-style: none;
+}
+
+.footer_sailio {
+	padding: 10px;
+	/*border-top: 3px solid black;*/
+}
+
+.footer_sisalto {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.footer_infot{
+	text-align: left;
+	display: inline-block;
+}
+
+
+
+
+
+.facebook_link {
+	list-style: none;
+}
+.linkedin_link {
+	list-style: none;
+}
+.twitter_link {
+	list-style: none;
+}
+
+.somekuvake_sailio {
+	padding: 0;
+	margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+	#kategoriat {
+		display: inline-block;
+		float: left;
+		width: 60%;
+	}
+	
+	#ohjesailio {
+		display: inline-block;
+		float: right;
+		width: 40%;
+		margin-top: 0;
+	}
+	
+	.footer_sailio {
+		clear: both;
+	}
+	
+	
+}
+
+
+@media screen and (min-width: 800px) {
+	
+	
+}
