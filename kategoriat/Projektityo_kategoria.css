@@ -9,6 +9,7 @@
 	margin-left: auto;
 	margin-right: auto;
 	border: 3px solid #000000;
+	background-color: #E09F3E;
 }
 
 main{
@@ -19,6 +20,8 @@ header{
 	padding: 10px;
 	border: 3px solid #000000;
 	margin: 10px;
+	background-color: #9E2A2B;
+	color: #FFFFFF;
 }
 
 header h1{
@@ -39,6 +42,7 @@ section.ohje {
 	margin-right: auto;
 	margin-bottom: 10px;
 	border: 3px solid #000000;
+	background-color: #FFF3B0;
 }
 
 #ohjesailio{
@@ -46,6 +50,7 @@ section.ohje {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 40px;
+	background-color: #FFF3B0;
 }
 
 #ohjesailio h3{
@@ -63,6 +68,8 @@ a.linkki{
 footer{
 	border-top: 3px solid #000000;
 	padding: 10px;
+	background-color: #9E2A2B;
+	color: #FFFFFF;
 }
 
 .footer_info{
