@@ -1,6 +1,7 @@
 ﻿* {
 	max-width: 100%;
 	box-sizing: border-box;
+	font-family: 'Merriweather';
 }
 
 #sailio{
@@ -53,6 +54,10 @@ section.ohje {
 
 #linkit ul{
 	list-style: none;
+}
+
+a.linkki{
+	text-decoration: none;
 }
 
 footer{
