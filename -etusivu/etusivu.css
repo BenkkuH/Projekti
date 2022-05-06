@@ -36,7 +36,7 @@ header {
 	text-align: center;
 }
 
-#kategoriat  a:link, a:visited {
+#kategoriat  a:link {
 	display: block;
 	width: 80%;
 	padding: 10px;
@@ -47,6 +47,11 @@ header {
 	background-color: #fff3b0;
 	color: #000000;
 	text-align: center;
+}
+
+#kategoriat a:hover {
+	background-color: #9e2a2b;
+	color: #FFFFFF;
 }
 
 #ohjesailio {
