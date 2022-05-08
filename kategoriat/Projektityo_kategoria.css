@@ -57,6 +57,11 @@ section.ohje {
 	padding-bottom: 1px;
 }
 
+#ohjesailio a:hover{
+	color:#FFFFFF;
+	text-decoration: underline;
+}
+
 #ohjesailio h3{
 	margin-left: 10px;
 }
@@ -66,6 +71,10 @@ a.ohjelinkki{
 	padding: 6px;
 	background-color:#9E2A2B;
 	text-decoration: none;
+}
+
+#kategoriasailio a:hover{
+	background-color: #540b0e;
 }
 
 #linkit ul{
@@ -113,6 +122,13 @@ footer{
 }
 .twitter_linkki {
 	list-style: none;
+}
+
+@media screen and (min-width: 400px) {
+
+	#ohjesailio{
+		width: 50%;
+	}
 }
 
 @media screen and (min-width: 600px) {
