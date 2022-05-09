@@ -5,12 +5,13 @@
 }
 
 #sailio {
-	max-width: 1200px;
+	/*max-width: 1200px;*/
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 2px;
 	/*border: 3px solid black;*/
 	background-color: #e09f3e;
+	background-size: cover;
 
 }
 
