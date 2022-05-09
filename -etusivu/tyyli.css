@@ -11,6 +11,7 @@
 	padding-top: 2px;
 	/*border: 3px solid black;*/
 	background-color: #e09f3e;
+	background-size: cover;
 
 }
 
@@ -96,6 +97,11 @@ a.linkki {
 	display: inline-block;
 }
 
+.some p {
+	text-align: left;
+	display: inline-block;
+}
+
 .facebook_link {
 	list-style: none;
 }
@@ -128,11 +134,51 @@ a.linkki {
 	.footer_sailio {
 		clear: both;
 	}
+
+	.footer_infot {
+		width: 50%;
+		float: left;
+	}
+
+	.footer_sisalto::after {
+		content: "";
+		display: block;
+		clear: both;
+		}
+
+	.some {
+		width: 50%;
+		float: right;
+	}
 	
 }
 
 
 @media screen and (min-width: 800px) {
-	
+	.footer_infot {
+		width: 66%;
+	}
+
+	.aspa_info {
+		width: 50%;
+		float: left;
+	}
+
+	.myynti_info {
+		width: 50%;
+		float: left;
+	}
+
+	.some {
+		width: 33%;
+	}
+
+	.somekuvake_sailio li {
+		display: inline-block;
+	}
+
+	.somekuvake_sailio a {
+		text-decoration: none;
+	}
 	
 }
