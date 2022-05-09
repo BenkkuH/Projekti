@@ -79,7 +79,7 @@ a.linkki {
 	text-decoration: none;
 }
 
-.footer_sailio {
+footer {
 	padding: 10px;
 	background-color: #9e2a2b;
 	color: #FFFFFF;
@@ -131,7 +131,7 @@ a.linkki {
 		margin-top: 0;
 	}
 	
-	.footer_sailio {
+	footer {
 		clear: both;
 	}
 
