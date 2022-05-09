@@ -37,7 +37,7 @@ header {
 	text-align: center;
 }
 
-#kategoriat  a:link {
+#kategoriat  a:link, a:visited {
 	display: block;
 	width: 80%;
 	padding: 10px;
@@ -132,7 +132,7 @@ footer {
 	}
 	
 	footer {
-		clear: both;
+		/*clear: both;*/
 	}
 
 	.footer_infot {
