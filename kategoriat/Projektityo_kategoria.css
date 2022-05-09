@@ -69,11 +69,11 @@ section.ohje {
 a.ohjelinkki{
 	color: white;
 	padding: 6px;
-	background-color:#9E2A2B;
+	background-color:#540b0e;
 	text-decoration: none;
 }
 
-#kategoriasailio a:hover{
+.ohje a:hover{
 	background-color: #540b0e;
 }
 
