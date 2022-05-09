@@ -124,12 +124,7 @@ footer{
 	list-style: none;
 }
 
-@media screen and (min-width: 400px) {
 
-	#ohjesailio{
-		width: 50%;
-	}
-}
 
 @media screen and (min-width: 600px) {
 	
