@@ -58,7 +58,7 @@ section.ohje {
 
 #kategoriat  a:link, a:visited {
 	display: block;
-	width: 80%;
+	max-width: 320px;
 	padding: 10px;
 	margin-left: auto;
 	margin-right: auto;
@@ -75,6 +75,7 @@ section.ohje {
 }
 
 #ohjesailio {
+	max-width: 320px;
 	padding-top: 1px;
 	padding-bottom: 1px;
 	background-color: #fff3b0;
