@@ -34,7 +34,7 @@ header {
 	text-align: center;
 }
 
-#otsikko a h1 { 
+#otsikko a { 
 	text-decoration: none;
 	color: #FFFFFF;
 }
@@ -58,7 +58,6 @@ section.ohje {
 
 #kategoriat  a:link, a:visited {
 	display: block;
-	max-width: 320px;
 	padding: 10px;
 	margin-left: auto;
 	margin-right: auto;
@@ -75,7 +74,6 @@ section.ohje {
 }
 
 #ohjesailio {
-	max-width: 320px;
 	padding-top: 1px;
 	padding-bottom: 1px;
 	background-color: #fff3b0;
