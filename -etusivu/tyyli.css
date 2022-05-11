@@ -174,8 +174,9 @@ footer {
 	}
 
 	.footer_infot {
-		width: 50%;
+		width: 40%;
 		float: left;
+		margin-left: 10px;
 	}
 
 	.footer_sisalto::after {
@@ -194,7 +195,7 @@ footer {
 
 @media screen and (min-width: 800px) {
 	.footer_infot {
-		width: 66%;
+		width: 50%;
 	}
 
 	.aspa_info {
