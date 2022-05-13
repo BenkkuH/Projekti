@@ -56,6 +56,10 @@ section.ohje {
 	background-color: #FFF3B0;
 }
 
+.ohje a:hover {
+	background-color: #540b0e;
+}
+
 #kategoriat  a:link, a:visited {
 	display: block;
 	padding: 10px;
@@ -101,6 +105,14 @@ a.ohjelinkki{
 a.linkki {
 	color:#000000;
 	text-decoration: none;
+	padding-left: 5px;
+	padding-right: 10px;
+}
+
+#linkit a:hover {
+	background-color: #540b0e;
+	color: #FFFFFF;
+	border-radius: 10px;
 }
 
 footer {
