@@ -26,10 +26,18 @@
 				</div>
 			</header>
 			
-			<main>
+			<main><?php
+                $id = $yhteys->real_escape_string($_GET["id"]);
+                $hakusql = "SELECT * FROM artikkeli
+                    INNER JOIN kayttaja ON tunnus = kirjoittaja WHERE artikkeli_id = $id";
+                    $tulokset = $yhteys->query($hakusql);
+                    while($rivi = $tulokset->fetch_assoc()) {
+
+                    
+                ?>
 				<article>
-					<h2>Ohjeen otsikko</h2>
-                	<p>Luotu [pvm] || Kalle Kirjoittaja (rooli)</p>
+					<h2><?php echo $rivi["otsikko"];?></h2>
+                	<p>Luotu <?php echo $rivi["luontipvm"];?> || <?php echo $rivi["etunimi"]. " ". $rivi["sukunimi"];?> (rooli)</p>
                     <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
@@ -38,7 +46,9 @@
                          velit esse cillum dolore eu fugiat nulla pariatur. 
                          Excepteur sint occaecat cupidatat non proident, 
                          sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                    <?php } ?>
                 </article>
+                
 				<div id="ohjesailio">
 					<h3>Uusimmat ohjeet</h3>
 					<nav id="linkit">
