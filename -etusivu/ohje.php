@@ -22,7 +22,7 @@
 			
 			<header>
 				<div id="otsikko">
-					<a href="etusivu.html"><h1>Oy Webhotelli Ab</h1></a>
+					<a href="index.php"><h1>Oy Webhotelli Ab</h1></a>
 				</div>
 			</header>
 			
