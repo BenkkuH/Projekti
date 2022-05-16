@@ -1,12 +1,14 @@
-$palvelin = "localhost";
-$kayttaja = "root";  
-$salasana = "";
-$tietokanta = "tukisivusto";
+<?php
+   $palvelin = "localhost";
+   $kayttaja = "root";  
+   $salasana = "";
+   $tietokanta = "tukisivusto";
 
-$yhteys = new mysql($palvelin, $kayttaja, $salasana, $tietokanta);
+   $yhteys = new mysqli($palvelin, $kayttaja, $salasana, $tietokanta);
 
-if ($yhteys->connect_error) {
-   die("Yhteyden muodostaminen epäonnistui: " . $yhteys->connect_error);
-}
+   if ($yhteys->connect_error) {
+      die("Yhteyden muodostaminen epäonnistui: " . $yhteys->connect_error);
+   }
 
-$yhteys->set_charset("utf8");
+   $yhteys->set_charset("utf8");
+?>
