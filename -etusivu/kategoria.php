@@ -1,4 +1,7 @@
 ﻿<!DOCTYPE html>
+<?php
+    require_once ("tietokanta.php");
+?>
 <html lang="fi">
 	<head>
 		<meta charset="UTF-8">
@@ -19,7 +22,7 @@
 			
 			<header>
 				<div id="otsikko">
-					<a class="otsikkolinkki" href="etusivu.html"><h1>Oy Webhotelli Ab</h1></a>
+					<a class="otsikkolinkki" href="index.php"><h1>Oy Webhotelli Ab</h1></a>
 				</div>
 			</header>
 			
