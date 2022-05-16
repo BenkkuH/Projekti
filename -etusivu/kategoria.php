@@ -1,4 +1,7 @@
 ﻿<!DOCTYPE html>
+<?php
+    require_once ("tietokanta.php");
+?>
 <html lang="fi">
 	<head>
 		<meta charset="UTF-8">
