@@ -39,23 +39,20 @@
 			
 				<div id="kategoriasailio">
 					
-					
+				<?php
+				$id = $yhteys->real_escape_string($_GET["id"]);
+				$hakusql = "SELECT kategoria_id, artikkeli_id, otsikko, teksti FROM artikkeli WHERE kategoria_id = $id
+				ORDER BY luontipvm DESC";
+				$tulokset = $yhteys->query($hakusql);
+                    while($rivi = $tulokset->fetch_assoc()) {   
+
+				?>
 					<section class="ohje">
 					
-						<h3>Ohjeen otsikko</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultricies tristique tellus eget 
-						ullamcorper. Nullam egestas nunc vel posuere placerat.</p>
-						<a class="ohjelinkki" href="ohje.html">Lue koko ohje</a>
-					
-					</section>
-					
-					<section class="ohje">
-					
-						<h3>Ohjeen otsikko</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris ultricies tristique tellus eget 
-						ullamcorper. Nullam egestas nunc vel posuere placerat.</p>
-						<a class="ohjelinkki" href="ohje.html">Lue koko ohje</a>
-					
+						<h3><?php echo $rivi["otsikko"];?></h3>
+						<p><?php echo $rivi["teksti"];?></p>
+						<a class="ohjelinkki" href="ohje.php?id=<?php echo $rivi["artikkeli_id"];?>">Lue koko ohje</a>
+						<?php } ?>
 					</section>
 					
 				
