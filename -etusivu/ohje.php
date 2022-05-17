@@ -43,18 +43,20 @@
                 </article>
                 
 				<div id="ohjesailio">
-					<h3>Uusimmat ohjeet</h3>
-					<nav id="linkit">
-						<ul>
-							<li><a class="linkki" href="ohje.html">Ohje 1 </a></li>
-							<li><a class="linkki" href="ohje.html">Ohje 2 </a></li>
-							<li><a class="linkki" href="ohje.html">Ohje 3 </a></li>
-							<li><a class="linkki" href="ohje.html">Ohje 4 </a></li>
-							<li><a class="linkki" href="ohje.html">Ohje 5 </a></li>
-							<li><a class="linkki" href="ohje.html">Ohje 6 </a></li>
-				        </ul>
-					</nav>
-				</div>
+				<h3>Uusimmat ohjeet</h3>
+				<nav id="linkit">
+					<ul><?php
+                        $hakusql = "SELECT otsikko, artikkeli_id FROM artikkeli
+                            ORDER BY luontipvm DESC LIMIT 10";
+                            $tulokset = $yhteys->query($hakusql);
+                            while($rivi = $tulokset->fetch_assoc()) {
+                        ?>
+                            <li><a class="linkki" href="ohje.php?id=<?php echo $rivi["artikkeli_id"];?>"><?php echo $rivi["otsikko"];?></a></li>
+                        <?php } ?>
+					</ul>
+                    
+				</nav>
+			</div>
 			</main>
 			<footer>
 				<div class="footer_sisalto">

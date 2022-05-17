@@ -91,7 +91,7 @@ section.ohje {
 }
 
 #ohjesailio ul {
-	list-style: none;
+	list-style: none;/*Pitäskö tähän kuitenkin laittaa list bullet?*/
 	padding-left: 14px;
 }
 
