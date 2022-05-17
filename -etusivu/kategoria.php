@@ -50,7 +50,8 @@
 					<section class="ohje">
 					
 						<h3><?php echo $rivi["otsikko"];?></h3>
-						<p><?php echo $rivi["teksti"];?></p>
+						<?php $lyhytTeksti = mb_strimwidth($rivi["teksti"], 0, 200, "...");?>
+						<p><?php echo $lyhytTeksti;?></p>
 						<a class="ohjelinkki" href="ohje.php?id=<?php echo $rivi["artikkeli_id"];?>">Lue koko ohje</a>
 						<?php } ?>
 					</section>
