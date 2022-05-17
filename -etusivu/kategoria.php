@@ -27,7 +27,15 @@
 			</header>
 			
 			<main>
-				<h2>Tukiohjeet: [kategorian nimi]</h2>
+				<?php
+				$id = $yhteys->real_escape_string($_GET["id"]);
+				$hakusql = "SELECT nimi, kategoria_id FROM kategoria WHERE kategoria_id = $id";
+				$tulokset = $yhteys->query($hakusql);
+                    while($rivi = $tulokset->fetch_assoc()) {   
+
+				?>
+				<h2>Tukiohjeet: <?php echo $rivi["nimi"];?></h2>
+				<?php } ?>
 			
 				<div id="kategoriasailio">
 					
