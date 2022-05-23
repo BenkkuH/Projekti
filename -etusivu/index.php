@@ -7,6 +7,7 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" type="text/css" href="tyyli.css">
 		<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Webhotelli</title>
 	</head>

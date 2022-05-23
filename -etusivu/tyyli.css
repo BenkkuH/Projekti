@@ -1,7 +1,7 @@
 * {
 	max-width: 100%;
 	box-sizing: border-box;
-	font-family: 'Merriweather';
+	font-family: 'Montserrat';
 
 }
 
@@ -24,6 +24,7 @@ main::after {
 	}
 
 header {
+	font-family: 'Merryweather';
 	padding: 10px;
 	margin: 10px;
 	background-color: #9e2a2b ;
