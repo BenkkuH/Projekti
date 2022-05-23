@@ -44,6 +44,7 @@
 				$hakusql = "SELECT kategoria_id, artikkeli_id, otsikko, teksti FROM artikkeli WHERE kategoria_id = $id
 				ORDER BY luontipvm DESC";
 				$tulokset = $yhteys->query($hakusql);
+				if($tulokset->num_rows > 0) {
                     while($rivi = $tulokset->fetch_assoc()) {   
 
 				?>
@@ -55,7 +56,10 @@
 						<a class="ohjelinkki" href="ohje.php?id=<?php echo $rivi["artikkeli_id"];?>">Lue koko ohje</a>
 						<?php } ?>
 					</section>
-					
+				<?php 
+				} else {
+					echo"Tämä kategoria on vielä tyhjä =(";
+				} ?>	
 				
 				</div>
 				
