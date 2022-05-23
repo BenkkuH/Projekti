@@ -36,7 +36,7 @@
                             $tulokset = $yhteys->query($hakusql);
                             while($rivi = $tulokset->fetch_assoc()) {
                         ?>
-                            <li><a class="linkki" href="ohje.php?id=<?php echo $rivi["artikkeli_id"];?>"><?php echo $rivi["otsikko"];?></a></li>
+                            <li><a class="linkki" href="ohje.php?id=<?php echo $rivi["artikkeli_id"];?>" title = "Lue ohje"><?php echo $rivi["otsikko"];?></a></li>
                         <?php } ?>
 					</ul>
                     
