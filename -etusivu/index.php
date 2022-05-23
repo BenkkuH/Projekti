@@ -24,7 +24,7 @@
                     $tulokset = $yhteys->query($hakusql);
                     while($rivi = $tulokset->fetch_assoc()) {                    
             ?>
-				<a href="kategoria.php?id=<?php echo $rivi["kategoria_id"];?>"><b><?php echo $rivi["nimi"];?></b></a>
+				<a href="kategoria.php?id=<?php echo $rivi["kategoria_id"];?>" title = "Siirry kategoriaan"><b><?php echo $rivi["nimi"];?></b></a>
             <?php } ?>
 			</div>
 			<div id="ohjesailio">
