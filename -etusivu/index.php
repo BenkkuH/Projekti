@@ -39,8 +39,7 @@
                         ?>
                             <li><a class="linkki" href="ohje.php?id=<?php echo $rivi["artikkeli_id"];?>" title = "Lue ohje"><?php echo $rivi["otsikko"];?></a></li>
                         <?php } ?>
-					</ul>
-                    
+					</ul>                    
 				</nav>
 			</div>
 		</main>

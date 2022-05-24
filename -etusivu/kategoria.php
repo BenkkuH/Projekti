@@ -10,32 +10,24 @@
 		<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	</head>
-		
-	<body>
-		
-		<div id="sailio">
-			
+	</head>		
+	<body>		
+		<div id="sailio">			
 			<header>
 				<div id="otsikko">
 					<a href="index.php" title ="Siirry etusivulle"><h1>Oy Webhotelli Ab</h1></a>
 				</div>
-			</header>
-			
+			</header>			
 			<main>
 				<?php
 				$id = $yhteys->real_escape_string($_GET["id"]);
 				$hakusql = "SELECT nimi, kategoria_id FROM kategoria WHERE kategoria_id = $id";
 				$tulokset = $yhteys->query($hakusql);
                     while($rivi = $tulokset->fetch_assoc()) {   
-
 				?>
 				<h1>Tukiohjeet: <?php echo $rivi["nimi"];?></h1>
-				<?php } ?>
-			
-				<div id="kategoriasailio">
-					
+				<?php } ?>			
+				<div id="kategoriasailio">					
 				<?php
 				$id = $yhteys->real_escape_string($_GET["id"]);
 				$hakusql = "SELECT kategoria_id, artikkeli_id, otsikko, teksti FROM artikkeli WHERE kategoria_id = $id
@@ -43,10 +35,8 @@
 				$tulokset = $yhteys->query($hakusql);
 				if($tulokset->num_rows > 0) {
                     while($rivi = $tulokset->fetch_assoc()) {   
-
 				?>
-					<section class="ohje">
-					
+					<section class="ohje">					
 						<h2><?php echo $rivi["otsikko"];?></h2>
 						<?php $lyhytTeksti = mb_strimwidth($rivi["teksti"], 0, 200, "...");?>
 						<p><?php echo $lyhytTeksti;?></p>
@@ -56,10 +46,8 @@
 				<?php 
 				} else {
 					echo"Tämä kategoria on vielä tyhjä =(";
-				} ?>	
-				
-				</div>
-				
+				} ?>					
+				</div>				
 				<div id="ohjesailio">
 				<h2>Uusimmat ohjeet</h2>
 				<nav id="linkit">
@@ -71,13 +59,10 @@
                         ?>
                             <li><a class="linkki" href="ohje.php?id=<?php echo $rivi["artikkeli_id"];?>" title = "Lue ohje"><?php echo $rivi["otsikko"];?></a></li>
                         <?php } ?>
-					</ul>
-                    
+					</ul>                    
 				</nav>
-			</div>
-			
-			</main>
-			
+			</div>			
+			</main>			
 			<footer>
 				<div class="footer_sisalto">
 					<div class="footer_infot">

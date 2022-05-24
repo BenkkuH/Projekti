@@ -9,36 +9,28 @@
 		<link rel="stylesheet" type="text/css" href="tyyli.css">
 		<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-	</head>
-		
-	<body>
-		
-		<div id="sailio">
-			
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">		
+	</head>		
+	<body>		
+		<div id="sailio">			
 			<header>
 				<div id="otsikko">
 					<a href="index.php" title ="Siirry etusivulle"><h1>Oy Webhotelli Ab</h1></a>
 				</div>
-			</header>
-			
+			</header>			
 			<main><?php
                 $id = $yhteys->real_escape_string($_GET["id"]);
                 $hakusql = "SELECT * FROM artikkeli
                     INNER JOIN kayttaja ON tunnus = kirjoittaja WHERE artikkeli_id = $id";
                     $tulokset = $yhteys->query($hakusql);
-                    while($rivi = $tulokset->fetch_assoc()) {
-
-                    
+                    while($rivi = $tulokset->fetch_assoc()) {                  
                 ?>
 				<article>
 					<h2><?php echo $rivi["otsikko"];?></h2>
                 	<p><b>Luotu <?php echo $rivi["luontipvm"];?> || <?php echo $rivi["etunimi"]." ".$rivi["sukunimi"]." (".$rivi["rooli"].")";?></b></p>
                     <p><?php echo $rivi["teksti"];?></p>
                     <?php } ?>
-                </article>
-                
+                </article>                
 				<div id="ohjesailio">
 				<h2>Uusimmat ohjeet</h2>
 				<nav id="linkit">
@@ -50,8 +42,7 @@
                         ?>
                             <li><a class="linkki" href="ohje.php?id=<?php echo $rivi["artikkeli_id"];?>"title="Lue ohje"><?php echo $rivi["otsikko"];?></a></li>
                         <?php } ?>
-					</ul>
-                    
+					</ul>                    
 				</nav>
 			</div>
 			</main>
