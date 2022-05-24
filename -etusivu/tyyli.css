@@ -24,7 +24,6 @@ main::after {
 	}
 
 header {
-	font-family: 'Merryweather';
 	padding: 10px;
 	margin: 10px;
 	background-color: #9e2a2b ;
@@ -33,6 +32,10 @@ header {
 
 #otsikko {
 	text-align: center;
+}
+
+#otsikko h1{
+	font-family: 'Merryweather';
 }
 
 #otsikko a { 
@@ -89,6 +92,7 @@ section.ohje {
 
 #ohjesailio h3 {
 	margin-left: 10px;
+	font-family: 'Merryweather';
 }
 
 #ohjesailio ul {
