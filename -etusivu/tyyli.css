@@ -36,6 +36,7 @@ header {
 
 #otsikko h1{
 	font-family: 'Merryweather';
+	font-size: 30pt;
 }
 
 #otsikko a { 
@@ -43,10 +44,11 @@ header {
 	color: #FFFFFF;
 }
 
-main h2{
+main h1{
 	margin-top: 20px;
 	margin-left: auto;
 	margin-right: auto;
+	font-family: 'Merryweather';
 }
 
 section.ohje {
@@ -58,6 +60,10 @@ section.ohje {
 	margin-right: auto;
 	margin-bottom: 20px;
 	background-color: #FFF3B0;
+}
+
+.ohje h2{
+	font-family: 'Merryweather';
 }
 
 .ohje a:hover {

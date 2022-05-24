@@ -31,7 +31,7 @@
                     while($rivi = $tulokset->fetch_assoc()) {   
 
 				?>
-				<h2>Tukiohjeet: <?php echo $rivi["nimi"];?></h2>
+				<h1>Tukiohjeet: <?php echo $rivi["nimi"];?></h1>
 				<?php } ?>
 			
 				<div id="kategoriasailio">
@@ -47,7 +47,7 @@
 				?>
 					<section class="ohje">
 					
-						<h3><?php echo $rivi["otsikko"];?></h3>
+						<h2><?php echo $rivi["otsikko"];?></h2>
 						<?php $lyhytTeksti = mb_strimwidth($rivi["teksti"], 0, 200, "...");?>
 						<p><?php echo $lyhytTeksti;?></p>
 						<a class="ohjelinkki" href="ohje.php?id=<?php echo $rivi["artikkeli_id"];?>">Lue koko ohje</a>
