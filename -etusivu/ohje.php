@@ -34,7 +34,7 @@
                 ?>
 				<article>
 					<h2><?php echo $rivi["otsikko"];?></h2>
-                	<p>Luotu <?php echo $rivi["luontipvm"];?> || <?php echo $rivi["etunimi"]." ".$rivi["sukunimi"]." (".$rivi["rooli"].")";?></p>
+                	<p><b>Luotu <?php echo $rivi["luontipvm"];?> || <?php echo $rivi["etunimi"]." ".$rivi["sukunimi"]." (".$rivi["rooli"].")";?></b></p>
                     <p><?php echo $rivi["teksti"];?></p>
                     <?php } ?>
                 </article>

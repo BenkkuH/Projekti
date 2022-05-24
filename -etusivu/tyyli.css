@@ -87,6 +87,10 @@ section.ohje {
 	color: #FFFFFF;
 }
 
+article h2{
+	font-family: 'Merryweather';
+}
+
 #ohjesailio {
 	padding-top: 1px;
 	padding-bottom: 1px;
