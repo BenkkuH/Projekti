@@ -61,7 +61,7 @@
 				</div>
 				
 				<div id="ohjesailio">
-				<h3>Uusimmat ohjeet</h3>
+				<h2>Uusimmat ohjeet</h2>
 				<nav id="linkit">
 					<ul><?php
                         $hakusql = "SELECT otsikko, artikkeli_id FROM artikkeli
