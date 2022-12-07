@@ -1,5 +1,5 @@
 
-# Projekti
+# Web-hotelli projekti
 
 ## Description 
 PHP- and HTML5-based school project showcasing the customer side of a imaginary web hosting company. The website consists from a few different
